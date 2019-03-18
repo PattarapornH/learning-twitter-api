@@ -2,17 +2,17 @@ import tweepy
 import os
 import json
 
-consumer_key = 'YKgrgU3hwQMwJnSzSfdIFNDO5'
-consumer_secret = 'F2XDedxzwXsEy7uUMeoQVK1y65Q6kgjVuBTVsD1ofUeCefBlVE'
-access_token = '1100219361371906054-v75OhPayXaJZoxIo1bMHIRohq6Gcsu'
-access_secret = 'nazL1RQYfVMLS9QRdaOxBH8wWrdWelCZEUftav79fqQYh'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_secret = ''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 
 api = tweepy.API(auth)
 
-followers = api.followers_ids(screen_name='StampApiwat')
+followers = api.followers_ids(screen_name='')
 
 TWEET_COUNT = 1000
 python_file_dir = os.path.dirname(__file__)
